@@ -9,7 +9,7 @@ jobs:
         id: scan_model
         uses: hiddenlayerai/hiddenlayer-model-scan-github-action@v0.1.1
         with:
-          model_path: Matcha-Chat-2.0-alpha2/models/model_list.json
+          model_path: https://huggingface.co/TheBloke/TinyLlama-1.1B-Chat-v0.3-GGUF/resolve/main/tinyllama-1.1b-chat-v0.3.Q4_K_M.gguf?download=true
         env:
           HL_CLIENT_ID: ${{ secrets.HL_CLIENT_ID }}
           HL_CLIENT_SECRET: ${{ secrets.HL_CLIENT_SECRET }}
